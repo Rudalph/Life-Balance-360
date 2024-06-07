@@ -6,7 +6,7 @@ import { Button } from "@/Components/ui/button"
 
 export default function CtaOne() {
   return (
-    <section className="py-10">
+    <section className="py-10 mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full text-center md:max-w-2xl">
           <h2 className="text-3xl font-bold leading-tight text-[#4B5563] sm:text-4xl lg:text-5xl">
