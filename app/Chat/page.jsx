@@ -43,35 +43,8 @@ const Page = () => {
 
   return (
     <div>
-      <div className='fixed bottom-0 left-0'>
-        <div className="drawer">
-          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content">
-            {/* Page content here */}
-            <label htmlFor="my-drawer" className="btn drawer-button bg-transparent shadow-none"><BsFillClipboardDataFill size={20} className='text-[#10847E]' /></label>
-          </div>
-          <div className="drawer-side">
-            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a><strong className='p-3'>1.  Indian Penal Code</strong></a></li>
-              <li><a><strong className='p-3'>2.  Code of Civil Procedure</strong></a></li>
-              <li><a><strong className='p-3'>3.  Code of Criminal Procedure</strong></a></li>
-              <li><a><strong className='p-3'>4.  Constitution of India</strong></a></li>
-              <li><a><strong className='p-3'>5.  Consumer Protection Act 2019</strong></a></li>
-              <li><a><strong className='p-3'>6.  Indian Medical Council Regultions 2002</strong></a></li>
-              <li><a><strong className='p-3'>7.  Medical Termination of Pregnancy Act, 1971</strong></a></li>
-              <li><a><strong className='p-3'>8.  The Clinical Establishments Act, 2010</strong></a></li>
-              <li><a><strong className='p-3'>9.  The Drugs and Cosmetics Act, 1940</strong></a></li>
-              <li><a><strong className='p-3'>10. The Mental Healthcare Act, 2017</strong></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <div className='w-full fixed bottom-0 flex justify-center align-middle items-center mb-10'>
-        <div className="flex w-full max-w-3xl items-center space-x-2 relative">
+        <div className="flex w-full max-w-3xl items-center space-x-2 relative sm: ml-2 mr-2">
           <Input
             type="text"
             placeholder="Ask your legal doubts...."
@@ -89,30 +62,6 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='fixed bottom-0 right-0'>
-        <div className="drawer drawer-end">
-          <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content">
-            {/* Page content here */}
-            <label htmlFor="my-drawer-4" className="btn drawer-button bg-transparent shadow-none"><LuNewspaper size={20} className='text-[#10847E]' /></label>
-          </div>
-          <div className="drawer-side">
-            <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-auto min-h-full bg-base-200 text-base-content">
-              <li><a>Sidebar Item 1</a></li>
-              <li><a>Sidebar Item 2</a></li>
-              <li><a><div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Card title!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                </div>
-              </div></a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
 
       <div className='mt-10'>
         {/* Chat bubbles */}

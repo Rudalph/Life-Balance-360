@@ -50,30 +50,32 @@ const Page = () => {
     }, []);
 
     return (
-        <div className=' mt-40 ml-72 flex justify-between align-middle'>
-            <div className='flex justify-center align-middle items-center'>
-                <BarChart
-                    width={900}
-                    height={400}
-                    data={chartData}
-                    // margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-                    className='flex justify-center align-middle items-center'
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="timestamp" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="height" fill="#8884d8" barSize={30} />
-                    <Bar dataKey="weight" fill="#82ca9d" barSize={30} />
-                    <Bar dataKey="heartRate" fill="#ffc658" barSize={30} />
-                    <Bar dataKey="targetWeight" fill="#283c63" barSize={30} />
-                    <Bar dataKey="dailyWaterIntake" fill="#1b4332" barSize={30} />
-                    <Bar dataKey="targetWeight" fill="#ffdc6b" barSize={30} />
-                </BarChart>
-            </div>
-            
+        
+        <div className='mt-60 md:mt-20 lg:mt-40 flex justify-center'>
+        <div className='max-w-screen-md w-full overflow-x-auto'>
+          <BarChart
+            width={900}
+            height={400}
+            data={chartData}
+            className='mx-auto'
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="timestamp" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="height" fill="#8884d8" barSize={30} />
+            <Bar dataKey="weight" fill="#82ca9d" barSize={30} />
+            <Bar dataKey="heartRate" fill="#ffc658" barSize={30} />
+            <Bar dataKey="targetWeight" fill="#283c63" barSize={30} />
+            <Bar dataKey="dailyWaterIntake" fill="#1b4332" barSize={30} />
+            <Bar dataKey="targetWeight" fill="#ffdc6b" barSize={30} />
+          </BarChart>
         </div>
+      </div>
+      
+            
+        
     );
 };
 

@@ -24,19 +24,19 @@ import Image from "next/image"
 
 export default function CardWithForm() {
   return (
-    <div className="flex justify-evenly align-middle mt-16  flex-wrap">
-    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED]">
+    <div className="flex justify-evenly align-middle mt-16 flex-wrap">
+    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED] m-5">
         <CardHeader>
           <Image 
            src={"/wired-flat-1258-medical-mask.gif"}
            height={100}
            width={100}
           />
-          <CardDescription>Deploy.</CardDescription>
+          <CardDescription></CardDescription>
         </CardHeader>
     </Card>
     
-    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED]">
+    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED] m-5">
         <CardHeader>
           <Image 
            src={"/wired-flat-428-injection.gif"}
@@ -46,7 +46,7 @@ export default function CardWithForm() {
         </CardHeader>
     </Card>
    
-    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED]">
+    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED] m-5">
         <CardHeader>
           <Image 
            src={"/wired-flat-1249-heart-beat.gif"}
@@ -56,7 +56,7 @@ export default function CardWithForm() {
         </CardHeader>
     </Card>
     
-    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED]">
+    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED] m-5">
         <CardHeader>
           <Image 
            src={"/wired-flat-955-demand.gif"}
@@ -66,7 +66,7 @@ export default function CardWithForm() {
         </CardHeader>
     </Card>
     
-    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED]">
+    <Card className="w-[150px] h-[150px] flex justify-center items-center align-middle bg-[#DEF8ED] m-5">
         <CardHeader>
           <Image 
            src={"/wired-flat-19-magnifier-zoom-search.gif"}

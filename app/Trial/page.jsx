@@ -205,7 +205,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='mt-40 flex justify-evenly'>
+      <div className='mt-40 flex justify-evenly flex-wrap gap-5 m-5'>
         <div className="card card-compact w-96 bg-base-100 shadow-xl ml-5 rounded-sm">
           <div className="card-body m-5">
             <h2 className="card-title"><strong>Basic Information</strong></h2>
@@ -252,7 +252,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='mt-10 mb-10 flex justify-evenly'>
+      <div className='mt-10 mb-10 flex justify-evenly flex-wrap gap-5 m-5'>
         <div className="card card-compact w-96 bg-base-100 shadow-xl ml-5 rounded-sm">
           <div className="card-body m-5">
             <h2 className="card-title"><strong>Diatery Habits</strong></h2>
@@ -299,11 +299,11 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex justify-evenly mb-10">
+      <div className="flex justify-evenly mb-10 flex-wrap gap-5 m-5">
         <Button className="bg-[#10847E]" onClick={handleSubmit}>Submit</Button>
         <Drawer>
           <DrawerTrigger asChild>
-            <Button className="bg-[#10847E]">Recomendations</Button>
+            <Button className="bg-[#10847E]">Advice</Button>
           </DrawerTrigger>
           <DrawerContent>
             <div className="mx-auto w-full">
@@ -324,7 +324,7 @@ const Page = () => {
         </Drawer>
         <Button className="bg-[#10847E]" onClick={handleEmotionClick}>Emotion</Button>
         <AlertDialog>
-          <AlertDialogTrigger>Score</AlertDialogTrigger>
+          <AlertDialogTrigger className="bg-[#10847E] w-20 text-white border rounded-lg h-10">Score</AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
               <AlertDialogTitle>Below Mentioned is Your Health Score</AlertDialogTitle>

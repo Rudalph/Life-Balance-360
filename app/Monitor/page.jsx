@@ -81,32 +81,49 @@ const Page = () => {
   }, [counter, spo2Sum, pulseRateSum]);
 
   return (
-    <div className='mt-40 ml-72'>
-      <div>
-        <h2>Live Data</h2>
-        <LineChart width={800} height={400} data={liveData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey='time' />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type='monotone' dataKey='SPO2' stroke='#8884d8' />
-          <Line type='monotone' dataKey='PulseRate' stroke='#82ca9d' />
-        </LineChart>
-      </div>
-      <div>
-        <h2>Historical Data</h2>
-        <BarChart width={800} height={400} data={historicalData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey='timestamp' />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="SPO2" fill="#8884d8" barSize={30} />
-          <Bar dataKey="PulseRate" fill="#82ca9d" barSize={30} />
-        </BarChart>
-      </div>
+    <div className='mt-40 ml-4 md:mt-20 md:ml-20 lg:mt-40 lg:ml-72'>
+  <div className='mb-8'>
+    <h2 className='text-lg md:text-2xl lg:text-3xl mb-4'>Live Data</h2>
+    <div className='overflow-x-auto'>
+      <LineChart
+        width={800}
+        height={400}
+        data={liveData}
+        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        className='w-full md:w-auto'
+      >
+        <CartesianGrid strokeDasharray='3 3' />
+        <XAxis dataKey='time' />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type='monotone' dataKey='SPO2' stroke='#8884d8' />
+        <Line type='monotone' dataKey='PulseRate' stroke='#82ca9d' />
+      </LineChart>
     </div>
+  </div>
+  <div>
+    <h2 className='text-lg md:text-2xl lg:text-3xl mb-4'>Historical Data</h2>
+    <div className='overflow-x-auto'>
+      <BarChart
+        width={800}
+        height={400}
+        data={historicalData}
+        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        className='w-full md:w-auto'
+      >
+        <CartesianGrid strokeDasharray='3 3' />
+        <XAxis dataKey='timestamp' />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey='SPO2' fill='#8884d8' barSize={30} />
+        <Bar dataKey='PulseRate' fill='#82ca9d' barSize={30} />
+      </BarChart>
+    </div>
+  </div>
+</div>
+
   );
 };
 
